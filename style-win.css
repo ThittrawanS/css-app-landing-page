@@ -127,32 +127,3 @@ body {
 .cta:hover {
   background: #2a2a36;
 }
-
-@media (max-width: 720px) {
-  body {
-    padding: 16px;
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 14px;
-    padding: 16px 20px;
-    border-radius: 24px;
-  }
-
-  .nav-links {
-    gap: 18px;
-  }
-
-  .hero {
-    padding-top: 64px;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .hero-subtitle {
-    font-size: 16px;
-  }
-}
