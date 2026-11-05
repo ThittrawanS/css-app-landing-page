@@ -1,0 +1,158 @@
+/* Dev 1 : Nav Bar + Hero Section */
+body {
+  min-height: 100vh;
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  background: #0c0e18;
+  color: #18181b;
+  display: flex;
+  justify-content: center;
+  padding: 36px 28px;
+}
+
+.app-shell {
+  width: min(1120px, 100%);
+  background: #f3f4f8;
+  border-radius: 28px;
+  padding: 22px 22px 80px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 18px 36px;
+  box-shadow: 0 1px 2px rgba(17, 17, 26, 0.06);
+}
+
+.brand {
+  position: relative;
+  color: #111111;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
+.brand-dot {
+  position: absolute;
+  top: 2px;
+  right: -9px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #7c5cff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: #1c1c1f;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: #6d4dff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.nav-links a:hover {
+  color: #6d4dff;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 108px 16px 24px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 28px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #ece7ff;
+  color: #6b46f5;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.hero h1 {
+  margin-bottom: 16px;
+  color: #16161d;
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+.hero h1 span {
+  background: linear-gradient(90deg, #4d5bff 0%, #6a3dff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-subtitle {
+  margin-bottom: 32px;
+  color: #2c2c33;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cta {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 12px;
+  background: #1b1b24;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(20, 20, 30, 0.16);
+}
+
+.cta:hover {
+  background: #2a2a36;
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 16px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px 20px;
+    border-radius: 24px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  .hero {
+    padding-top: 64px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+}

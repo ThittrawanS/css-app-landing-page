@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./style-win.css" />
     <link rel="stylesheet" href="./style-nueng.css" />
@@ -11,5 +17,28 @@
   </head>
   <body>
     <!-- Start Coding Here -->
+    <main class="app-shell">
+      <header class="navbar">
+        <a class="brand" href="#home">Acme<span class="brand-dot"></span></a>
+        <nav class="nav-links" aria-label="Primary">
+          <a class="active" href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section class="hero" id="home">
+        <p class="hero-badge">
+          <span aria-hidden="true">🚀</span>
+          Acme Productivity App
+        </p>
+        <h1>Boost Your <span>Productivity</span></h1>
+        <p class="hero-subtitle">
+          Streamline your workflow with our all-in-one productivity app.
+        </p>
+        <a class="cta" href="#trial">Start Free Trial</a>
+      </section>
+    </main>
   </body>
 </html>
