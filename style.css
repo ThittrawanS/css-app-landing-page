@@ -1,5 +1,76 @@
-/* Start coding here */
-* {
-    margin: 0px;
-    padding: 0px;
-  }
+/* Dev 2: Feature Section */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f7fc;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Row of cards */
+.features {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 16px;
+padding: 24px;
+background-color: #f5f4fb;
+font-family: "Inter", sans-serif;
+}
+
+/* One card: items stacked top to bottom */
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 280px;
+  max-width: 308px;
+  padding: 22px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.blue {
+background-color: #d9e4f6;
+}
+
+.indigo {
+background-color: #fbe6d8;
+}
+
+.purple {
+background-color: #e6dcf6;
+}
+
+/* Icon centered in its box */
+.icon {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 48px;
+height: 48px;
+margin-bottom: 32px;
+border-radius: 12px;
+background-color: rgba(255, 255, 255, 0.587);
+color: #5a43f3;
+}
+
+.icon img {
+width: 26px;
+height: 26px;
+}
+
+.card h3 {
+margin: 0 0 12px;
+color: #1f2033;
+font-size: 19px;
+font-weight: 600;
+}
+
+.card p {
+margin: 0;
+color: #5e6072;
+font-size: 13px;
+line-height: 1.45;
+}
