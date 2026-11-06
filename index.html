@@ -8,48 +8,111 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style-win.css" />
+    <link rel="stylesheet" href="./style-nueng.css" />
     <link rel="stylesheet" href="./style_nueng.css" />
     <title>Acme App</title>
   </head>
   <body>
-    <section class="features">
-      <div class="card blue">
-        <div class="icon">🚀</div>
-        <h3>Streamlined Workflows</h3>
-        <p>
-          Automate repetitive tasks and focus on high-impact work with our<br />
-          powerful productivity features.
-        </p>
-      </div>
+    <!-- Start Coding Here -->
+    <section class="panel" id="home">
+        <header class="navbar">
+          <a class="brand" href="#home">Acme<span class="brand-dot"></span></a>
+          <nav class="nav-links" aria-label="Primary">
+            <a class="active" href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
 
-      <div class="card indigo">
-        <div class="icon">
-          <img
-            src="https://api.iconify.design/ph/presentation-chart-fill.svg?color=%235a43f3"
-            alt="ภาพเสียจ้า"
-          />
+        <div class="hero">
+          <p class="hero-badge">
+            <span aria-hidden="true">🌈</span>
+            Acme Productivity App
+          </p>
+          <h1>Boost Your <span>Product</span>ivity</h1>
+          <p class="hero-subtitle">
+            Streamline your workflow with our all-in-one productivity app.
+          </p>
+          <a class="cta" href="#trial">Start Free Trial</a>
         </div>
-        <h3>Blazing Fast Performance</h3>
-        <p>
-          Experience lightning-fast performance and instant responsiveness with
-          our cutting-edge technology.
-        </p>
-      </div>
+        <section class="features">
+          <div class="card blue">
+            <div class="icon">🚀</div>
+            <h3>Streamlined Workflows</h3>
+            <p>
+              Automate repetitive tasks and focus on high-impact work with our<br />
+              powerful productivity features.
+            </p>
+          </div>
+    
+          <div class="card indigo">
+            <div class="icon">
+              <img
+                src="https://api.iconify.design/ph/presentation-chart-fill.svg?color=%235a43f3"
+                alt="ภาพเสียจ้า"
+              />
+            </div>
+            <h3>Blazing Fast Performance</h3>
+            <p>
+              Experience lightning-fast performance and instant responsiveness with
+              our cutting-edge technology.
+            </p>
+          </div>
+    
+          <div class="card purple">
+            <div class="icon">
+              <img
+                src="https://api.iconify.design/ph/smiley-fill.svg?color=%235a43f3"
+                alt="ภาพเสียจ้า"
+              />
+            </div>
+            <h3>Intuitive Interface</h3>
+            <p>
+              Our user-friendly interface makes it easy for anyone to streamline
+              their workflow.
+            </p>
+          </div>
+        </section>
+        <form class="contact-form" id="contact" action="#contact">
+          <h2>Get in Touch</h2>
 
-      <div class="card purple">
-        <div class="icon">
-          <img
-            src="https://api.iconify.design/ph/smiley-fill.svg?color=%235a43f3"
-            alt="ภาพเสียจ้า"
-          />
-        </div>
-        <h3>Intuitive Interface</h3>
-        <p>
-          Our user-friendly interface makes it easy for anyone to streamline
-          their workflow.
-        </p>
-      </div>
+          <label>
+            Name
+            <input type="text" name="name" placeholder="John Doe" />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="john@example.com" />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Your message..."></textarea>
+          </label>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <footer class="contact-footer">
+          <p>Acme productivity app ©2024</p>
+          <nav aria-label="Footer">
+            <a href="#faq">FAQ</a>
+            <a href="#terms">Terms</a>
+            <a href="#ai-policy">AI Policy</a>
+            <a href="#pricing">Pricing</a>
+          </nav>
+        </footer>
     </section>
+    
   </body>
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Dev 2: Feature Section */
 body {
   min-height: 100vh;
@@ -73,4 +74,11 @@ margin: 0;
 color: #5e6072;
 font-size: 13px;
 line-height: 1.45;
+=======
+/* Start coding here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+>>>>>>> win
 }
